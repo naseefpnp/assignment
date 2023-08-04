@@ -56,6 +56,7 @@ class _SplashAppState extends State<SplashApp> {
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner:false,
     home: SplashApp(),
   ));
 }
