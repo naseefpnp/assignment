@@ -29,11 +29,19 @@ class _ContactsState extends State<Contacts> {
     "assets/images/contacts/Adhil.jpg",
     "assets/images/contacts/faris.jpg"
   ];
+  var time =[
+    "12.12",
+    "07.45",
+    "05.52",
+    "yesterday",
+    "sunday"
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal,
           title: Text("Welcome"),
           actions: [
             Icon(Icons.camera_alt),
@@ -54,6 +62,7 @@ class _ContactsState extends State<Contacts> {
       body: ListView(
         children: List.generate(5, (index) => Card(
           child: ListTile(
+
             title: Text(names[index]),
             subtitle: Text("${phone[index]}"),
             leading: CircleAvatar(
@@ -62,7 +71,12 @@ class _ContactsState extends State<Contacts> {
             trailing: Wrap(
               direction: Axis.vertical,
               children: [
+              Text(time[index]),
+              CircleAvatar(
+                backgroundColor: Colors.teal,
+               radius: 10,
 
+              )
               ],
             ),
           ),

@@ -48,7 +48,7 @@ class _LoginState extends State<Login> {
                   labelText: "Email Id",
                 ),
                 validator: (emailId) {
-                  if (emailId!.isEmpty || emailId!.contains("@gmail.com")) {
+                  if (emailId!.isEmpty || !emailId.contains("@gmail.com")) {
                     return "invalid Email Id";
                   } else {
                     return null;
