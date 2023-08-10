@@ -41,7 +41,7 @@ class _FruitesState extends State<Fruites> {
 
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
-                  color: Colors.black38,
+                  color: Colors.black,
                 ),
 
                 child: TextButton(

@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-
 import 'package:practice_application/my%20app.dart';
+
 
 class SplashApp extends StatefulWidget {
   const SplashApp({super.key});
