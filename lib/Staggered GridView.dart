@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 void main(){
-  runApp(MaterialApp(home: stgridui(),));
+  runApp(MaterialApp(home: BooksGrid(),
+  debugShowCheckedModeBanner: false,));
 }
-class stgridui extends StatelessWidget {
+class BooksGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
